@@ -141,10 +141,10 @@ body {
 }
 
 /* Status Colors & Animations */
-.status-flood { color: var(--crimson); animation: criticalBlink 0.5s infinite; font-size: 3rem }
-.status-warning { color: var(--clr-warning); }
-.status-alert { color: var(--clr-alert); }
-.status-normal { color: var(--clr-normal); }
+.status-flood { color: var(--crimson); animation: criticalBlink 0.5s infinite; font-size: 3rem ;}
+.status-warning { color: var(--clr-warning);font-size: 2.8rem; }
+.status-alert { color: var(--clr-alert); font-size: 3rem;}
+.status-normal { color: var(--clr-normal); font-size: 3rem;}
 
 @keyframes criticalBlink { 
     0%, 100% { opacity: 1; } 
