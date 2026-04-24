@@ -141,7 +141,7 @@ body {
 }
 
 /* Status Colors & Animations */
-.status-flood { color: var(--crimson); animation: criticalBlink 0.5s infinite; }
+.status-flood { color: var(--crimson); animation: criticalBlink 0.5s infinite; font-size: 3rem }
 .status-warning { color: var(--clr-warning); }
 .status-alert { color: var(--clr-alert); }
 .status-normal { color: var(--clr-normal); }
