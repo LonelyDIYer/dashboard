@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>River Sentry | Crimson Monitor</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="monitor-container">
+        <header class="main-header">
+            <h1>River Sentry Node</h1>
+            <span class="node-meta">ID: ILO-SITE-01 | FREQUENCY: 3000ms</span>
+        </header>
+
+        <main class="sentry-card">
+            <div class="live-indicator-zone">
+                <video autoplay muted loop playsinline class="video-bg-layer">
+                    <source src="https://media.istockphoto.com/id/1280508331/video/torrential-rain-flooding-highway-with-cars.mp4?s=mp4-640x640-is&k=20&c=xHW6tEglrU2vD_EBUhkuLxsNLQVcGIdvyVaRcTfk6rc=" type="video/mp4">
+                </video>
+
+                <div class="indicator-content">
+                    <div class="loader" id="loader"></div>
+                    <div class="telemetry-box" id="telemetryBox" style="display: none;">
+                        <div id="statusIndicator" class="status-display">--</div>
+                        <div class="separator-line"></div>
+                        <div class="last-ping" id="lastUpdated"> INITIALIZING...</div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="log-history-zone">
+                <h3>Telemetry Stream</h3>
+                <div class="table-scroll">
+                    <table id="logsTable">
+                        <thead>
+                            <tr>
+                                <th>Condition</th>
+                                <th>Timestamp</th>
+                            </tr>
+                        </thead>
+                        <tbody id="logsTableBody"></tbody>
+                    </table>
+                </div>
+            </div>
+        </main>
+        
+        <div id="errorMessage" class="error-banner">SIGNAL_LOST: RECONNECTING...</div>
+    </div>
+    <script src="app.js"></script>
+</body>
+</html>
